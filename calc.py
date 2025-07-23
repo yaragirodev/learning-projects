@@ -1,3 +1,5 @@
+import time
+
 def plus(number1, number2):
 	result = number1 + number2
 	print(result)
@@ -39,3 +41,8 @@ while True:
 	elif get_mode == "/":
 		delenie(get_num1, get_num2)
 		input("Нажмите что-нибудь...")
+
+	if get_mode.lower() == "exit":
+		print("Пока!")
+		time.sleep(1)
+		break
